@@ -4,9 +4,9 @@ function convert(){
     var u= 0;
     if(!val)
         u = "Enter Temperature";
-    else{
-        unit == 'c' ? u = `${(val * 1.8) + 32}°F`: null
-        unit == 'f' ? u = `${Math.floor((val - 32) / 1.8)}°C`: null
+    else{        
+        unit == 'c' ? u = `${Math.floor((val - 32) / 1.8)}°C`: null
+        unit == 'f' ? u = `${(val * 1.8) + 32}°F`: null
     }
     document.getElementById("temp").innerHTML = u;
 }
